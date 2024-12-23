@@ -18,12 +18,15 @@
       class="bg-[#010313] min-h-screen bg-[url('./images/background.png')] bg-no-repeat bg-center"
     >
       <!-- home -->
-      <section class="hidden">
+      <section id="home" class="">
         <div class="flex min-h-screen items-center justify-center">
           <div class="text-white flex flex-col items-center space-y-4">
             <h1 class="text-8xl font-bold">ALPHABET CLASH</h1>
             <p>Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-            <button class="btn bg-white text-black hover:bg-white/70">
+            <button
+              onclick="playGames()"
+              class="btn bg-white text-black hover:bg-white/70"
+            >
               Play Now
             </button>
           </div>
@@ -31,7 +34,7 @@
       </section>
       <!-- home end -->
       <!-- playground  -->
-      <section class="hidden">
+      <section id="playground" class="hidden">
         <div class="flex justify-center min-h-screen items-center">
           <div class="playground-area space-y-6">
             <!-- screen -->
@@ -105,14 +108,14 @@
       </section>
       <!-- playground end -->
       <!-- score -->
-      <section>
+      <section class="hidden">
         <div class="flex justify-center min-h-screen items-center">
           <div
             class="text-white flex flex-col items-center p-8 border border-[#5a5a5a] space-y-5 bg-gradient-to-r from-white/40 to-purple-900 rounded-lg"
           >
             <h1 class="text-6xl font-extrabold">Score : <span>14</span></h1>
             <button class="btn bg-white text-black hover:bg-white/70">
-              Play Now
+              Play Again
             </button>
             <p>Practice will make you Pro</p>
           </div>
@@ -120,6 +123,7 @@
       </section>
       <!-- score end -->
     </main>
+    <script src="js/utility.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
