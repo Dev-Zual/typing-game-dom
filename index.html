@@ -1,14 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Typing Game</title>
     <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
+  <body class="poppins-font">
     <header></header>
-    <main></main>
+    <main
+      class="bg-[#010313] min-h-screen bg-[url('./images/background.png')] bg-no-repeat bg-center"
+    >
+      <!-- home -->
+      <section class="hidden">
+        <div class="flex min-h-screen items-center justify-center">
+          <div class="text-white flex flex-col items-center space-y-4">
+            <h1 class="text-8xl font-bold">ALPHABET CLASH</h1>
+            <p>Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+            <button class="btn bg-white text-black hover:bg-white/70">
+              Play Now
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- home end -->
+      <!-- playground  -->
+      <section class="hidden">
+        <div class="flex justify-center min-h-screen items-center">
+          <div class="playground-area space-y-6">
+            <!-- screen -->
+            <div class="">
+              <div
+                class="artboard artboard-horizontal phone-6 border-[20px] border-[#010313CC] bg-[#FFFFFFB3] rounded-2xl"
+              >
+                <div class="flex justify-center">
+                  <p class="bg-[#2F2941] text-white px-5 pb-3 rounded-b-xl">
+                    Don't watch keyboard while playing...
+                  </p>
+                </div>
+                <div class="flex justify-center items-center h-3/4">
+                  <h1 class="text-[#010313] font-semibold text-8xl">Y</h1>
+                </div>
+              </div>
+            </div>
+            <!-- screen ens -->
+            <!-- keyboard -->
+            <div>
+              <div class="my-1 flex w-full justify-center gap-1">
+                <kbd class="kbd cursor-pointer">q</kbd>
+                <kbd class="kbd">w</kbd>
+                <kbd class="kbd">e</kbd>
+                <kbd class="kbd">r</kbd>
+                <kbd class="kbd">t</kbd>
+                <kbd class="kbd">y</kbd>
+                <kbd class="kbd">u</kbd>
+                <kbd class="kbd">i</kbd>
+                <kbd class="kbd">o</kbd>
+                <kbd class="kbd">p</kbd>
+              </div>
+              <div class="my-1 flex w-full justify-center gap-1">
+                <kbd class="kbd">a</kbd>
+                <kbd class="kbd">s</kbd>
+                <kbd class="kbd">d</kbd>
+                <kbd class="kbd">f</kbd>
+                <kbd class="kbd">g</kbd>
+                <kbd class="kbd">h</kbd>
+                <kbd class="kbd">j</kbd>
+                <kbd class="kbd">k</kbd>
+                <kbd class="kbd">l</kbd>
+              </div>
+              <div class="my-1 flex w-full justify-center gap-1">
+                <kbd class="kbd">z</kbd>
+                <kbd class="kbd">x</kbd>
+                <kbd class="kbd">c</kbd>
+                <kbd class="kbd">v</kbd>
+                <kbd class="kbd">b</kbd>
+                <kbd class="kbd">n</kbd>
+                <kbd class="kbd">m</kbd>
+                <kbd class="kbd">/</kbd>
+              </div>
+            </div>
+            <!-- keyboard end -->
+            <div class="flex justify-between">
+              <button
+                class="flex gap-2 bg-purple-600 rounded-full px-5 py-3 text-white"
+              >
+                Life <img src="./images/heart.svg" alt="" />
+                <span>1</span>
+              </button>
+              <button
+                class="flex gap-2 bg-[#360490] rounded-full px-5 py-3 text-white"
+              >
+                Score <img src="./images/dollar.svg" alt="" /> <span>1</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- playground end -->
+    </main>
     <script src="js/main.js"></script>
   </body>
 </html>
